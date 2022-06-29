@@ -2,7 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -10,20 +9,19 @@
         <module name="spring_eureka" />
         <module name="spring_jms" />
         <module name="spring_gateway" />
-        <module name="module_product" />
         <module name="module_common" />
+        <module name="module_product" />
         <module name="module_user" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="module_common" options="-parameters" />
-      <module name="module_product" options="-parameters" />
-      <module name="module_user" options="-parameters" />
-      <module name="spring_eureka" options="-parameters" />
-      <module name="spring_gateway" options="-parameters" />
-      <module name="spring_jms" options="-parameters" />
-    </option>
+    <bytecodeTargetLevel>
+      <module name="module_common" target="1.5" />
+      <module name="module_product" target="1.5" />
+      <module name="module_user" target="1.5" />
+      <module name="spring_eureka" target="1.5" />
+      <module name="spring_gateway" target="1.5" />
+      <module name="spring_jms" target="1.5" />
+      <module name="spring_test" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
